@@ -20,8 +20,9 @@ public class Palindromo {
     }
 
     public static String validatePalindromo(String value){
-        for (int i = 0; i < value.length()/2; i++){
-            if (value.charAt(i) != value.charAt(value.length()-i)){
+        int number = value.length()/2-1;
+        for (int i = 0; i < number; i++){
+            if (value.charAt(i) != value.charAt(value.length()-i-1)){
                 return "No es un palíndromo";
             }
         }
