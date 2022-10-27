@@ -14,8 +14,7 @@ public class Palindromo {
         get("/espalindromo",(req, res) -> {
             String response = validatePalindromo(req.queryParams("value"));
             res.type("application/json");
-            return "{\"operation\":\"palíndromo\"," +
-                    "\"output\":"+ "\"" + response +"\"}";
+            return "{\"output\":"+ "\"" + response +"\"}";
         });
     }
 
